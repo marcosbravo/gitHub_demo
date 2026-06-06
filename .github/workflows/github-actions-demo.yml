@@ -1,7 +1,11 @@
 
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: workflow_call
+on: 
+  workflow_call:
+    inputs:
+      variable_random:
+        type: string
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
