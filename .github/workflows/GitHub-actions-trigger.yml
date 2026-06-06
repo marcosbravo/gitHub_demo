@@ -6,4 +6,4 @@ jobs:
   Trigger-github-actions-demo:
     uses: ./.github/workflows/github-actions-demo.yml
     secrets:
-      personal_access_token: "1111111"
+      personal_access_token: ${{ secrets.token }}
