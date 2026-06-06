@@ -1,7 +1,7 @@
 
 name: GitHub Actions Trigger
 run-name: ${{ github.actor }} is testing out GitHub Trigger 🚀
-on: push
+on: [push]
 jobs:
   Trigger-github-actions-demo:
     uses: ./.github/workflows/github-actions-demo.yml
