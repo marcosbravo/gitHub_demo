@@ -13,4 +13,5 @@ jobs:
       - name: veamos
         run: |
           echo "$GITHUB_REPOSITORY"
+          echo "$GITHUB_RUN_NUMBER"
   
