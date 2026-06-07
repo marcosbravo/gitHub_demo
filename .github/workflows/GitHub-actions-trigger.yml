@@ -7,3 +7,10 @@ jobs:
     uses: ./.github/workflows/github-actions-demo.yml
     with:
       variable_random: "X2356!"
+  Veamos-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: veamos
+        run: |
+          echo "$GITHUB_REPOSITORY"
+  
